@@ -185,3 +185,26 @@ root@kali:~# sha1sum aaa.txt
 root@kali:~# 
 
 ```
+```
+root@kali:~# python2
+Python 2.7.14 (default, Sep 17 2017, 18:50:44) 
+[GCC 7.2.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import hashlib
+>>> a='aaa111'
+>>> print hashlib.md5(a)
+<md5 HASH object @ 0x7f11086b0760>
+>>> print hashlib.md5(a).hexdigest()
+eabd8ce9404507aa8c22714d3f5eada9
+>>> print hashlib.sha1(a).hexdigest()
+4a0cde71aee7158542d013fc0c9f5acfc735c612
+>>> print hashlib.sha224(a).hexdigest()
+da32d54588c1e458604902f9911c5844a5c0cf67ccdfb6df02399e46
+>>> print hashlib.sha256(a).hexdigest()
+4f56fe65c8bd5296ca6a5f95faa0d65fb54b1ad8a87a1f816c7206803bcff938
+>>> print hashlib.sha384(a).hexdigest()
+e598a06f4e29f160964256231fcd0a64b06c0346f9c7146f47be1eee914c2ea9b30949dd7b133fdcc2b2eba33633ee52
+>>> print hashlib.sha512(a).hexdigest()
+9df278638225d6251714c6830338049966e799efd64917b57930d4e78413da2d0e47a7d25e804b637e5508d4e21294fc9f6dab6a18aed54ff06ff9b8c215a7c3
+>>> 
+```
