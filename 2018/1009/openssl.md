@@ -169,3 +169,14 @@ root@kali:~# cat sol
 aaa111
 root@kali:~# 
 ```
+# hash 
+```
+root@kali:~# echo "aaa111" >aaa.txt
+root@kali:~# cat aaa.txt 
+aaa111
+root@kali:~# openssl dgst -md5 -c aaa.txt 
+MD5(aaa.txt)= e7:65:69:9b:d7:55:17:e3:66:88:8e:4b:4b:03:47:24
+root@kali:~# md5sum aaa.txt 
+e765699bd75517e366888e4b4b034724  aaa.txt
+root@kali:~# 
+```
