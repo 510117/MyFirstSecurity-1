@@ -1,7 +1,8 @@
 # 加密
 ```
-
+```
 root@kali:~# openssl genrsa -out public.pem
+```
 ```
 Generating RSA private key, 2048 bit long modulus
 ...............................................................+++
